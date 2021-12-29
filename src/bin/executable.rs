@@ -6,4 +6,5 @@ fn main() {
     println!("Installed test bases: {:?}", inst.test_bases);
     println!("Available bases: {:?}", inst.available_bases);
     println!("Is single base: {}", inst.single_base);
+    inst.change_to_single_base()
 }
