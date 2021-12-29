@@ -40,9 +40,14 @@ impl Installation {
             .collect();
         let available_bases: Vec<String> = prod_bases
             .iter()
-            .filter(|x|!test_bases.contains(x))
-            .map(|x|format!("{}_Teste", x))
+            .filter(|x| !test_bases.contains(&format!("{}_Teste", x)))
+            .map(|x| format!("{}_Teste", x))
             .collect();
-        Installation {prod_bases, test_bases, available_bases, single_base}
+        Installation {
+            prod_bases,
+            test_bases,
+            available_bases,
+            single_base,
+        }
     }
 }

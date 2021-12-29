@@ -5,4 +5,5 @@ fn main() {
     println!("Installed prod bases: {:?}", inst.prod_bases);
     println!("Installed test bases: {:?}", inst.test_bases);
     println!("Available bases: {:?}", inst.available_bases);
+    println!("Is single base: {}", inst.single_base);
 }
